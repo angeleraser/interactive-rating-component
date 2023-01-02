@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div id="app">
+      <article id="rating-card" class="rating-card">
+        <header class="rating-card-header">
+          <div class="icon-star">
+            <img src="./images/icon-star.svg" alt="Star icon" />
+          </div>
+        </header>
+        <main class="rating-card-body">
+          <h1 class="rating-card-title">How did we do?</h1>
+
+          <p class="rating-card-description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+
+          <div class="rating-card-actions">
+            <div class="rating-options">
+              <button data-value="1">1</button>
+              <button data-value="2">2</button>
+              <button data-value="3">3</button>
+              <button data-value="4">4</button>
+              <button data-value="5">5</button>
+            </div>
+            <button class="submit-rating-btn">Submit</button>
+          </div>
+        </main>
+        <footer class="rating-card-actions"></footer>
+      </article>
+
+      <article id="thank-you-card" class="rating-card thank-you-card center-text">
+        <header class="rating-card-header">
+          <div class="thank-you-image">
+            <img
+              src="./images/illustration-thank-you.svg"
+              alt="Thank you illustration"
+            />
+          </div>
+        </header>
+        <main class="rating-card-body">
+          <div class="rating-card-selection">
+            You selected out <span class="selected-rate"></span> of 5
+          </div>
+
+          <h1 class="rating-card-title">Thank you!</h1>
+
+          <p class="rating-card-description">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </main>
+      </article>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
